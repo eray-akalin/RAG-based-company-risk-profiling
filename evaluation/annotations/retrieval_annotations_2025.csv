@@ -1,0 +1,41 @@
+query_id,query,company_filter,relevant_chunk_ids
+1,What supply chain disruptions or single-source supplier dependencies does the company face?,AAPL,"AAPL_2025_item1a_0008, AAPL_2025_item1a_0004, AAPL_2025_item1a_0002, AAPL_2025_item1a_0009"
+2,What supply chain disruptions or single-source supplier dependencies does the company face?,TSLA,TSLA_2025_item1a_0012
+3,What supply chain disruptions or single-source supplier dependencies does the company face?,NVDA,"NVDA_2025_item1a_0018, NVDA_2025_item1a_0001, NVDA_2025_item1a_0014"
+4,What supply chain disruptions or single-source supplier dependencies does the company face?,AMZN,"AMZN_2025_item1a_0018, AMZN_2025_item1a_0006"
+5,What supply chain disruptions or single-source supplier dependencies does the company face?,AMD,"AMD_2025_item1a_0058, AMD_2025_item1a_0015, AMD_2025_item1a_0059, AMD_2025_item1a_0030, AMD_2025_item1a_0011, AMD_2025_item1a_0002"
+6,What government regulations or compliance requirements pose risks to the company?,AAPL,"AAPL_2025_item1a_0026, AAPL_2025_item1a_0022, AAPL_2025_item1a_0018, AAPL_2025_item1a_0025, AAPL_2025_item1a_0023, AAPL_2025_item1a_0021, AAPL_2025_item1a_0020"
+7,What government regulations or compliance requirements pose risks to the company?,TSLA,"TSLA_2025_item1a_0024, TSLA_2025_item1a_0034, TSLA_2025_item1a_0037, TSLA_2025_item1a_0035, TSLA_2025_item1a_0036, TSLA_2025_item1a_0038"
+8,What government regulations or compliance requirements pose risks to the company?,NVDA,"NVDA_2025_item1a_0036, NVDA_2025_item1a_0037, NVDA_2025_item1a_0023, NVDA_2025_item1a_0052, NVDA_2025_item1a_0053, NVDA_2025_item1a_0003, NVDA_2025_item1a_0030, NVDA_2025_item1a_0028"
+9,What government regulations or compliance requirements pose risks to the company?,AMZN,"AMZN_2025_item1a_0027, AMZN_2025_item1a_0024, AMZN_2025_item1a_0023, AMZN_2025_item1a_0005, AMZN_2025_item1a_0026"
+10,What government regulations or compliance requirements pose risks to the company?,AMD,"AMD_2025_item1a_0047, AMD_2025_item1a_0048, AMD_2025_item1a_0046, AMD_2025_item1a_0033, AMD_2025_item1a_0038, AMD_2025_item1a_0039"
+11,How does competition threaten the company's market share?,AAPL,"AAPL_2025_item1a_0006, AAPL_2025_item1a_0005"
+12,How does competition threaten the company's market share?,TSLA,TSLA_2025_item1a_0010
+13,How does competition threaten the company's market share?,NVDA,"NVDA_2025_item1a_0001, NVDA_2025_item1a_0006, NVDA_2025_item1a_0005"
+14,How does competition threaten the company's market share?,AMZN,AMZN_2025_item1a_0001
+15,How does competition threaten the company's market share?,AMD,AMD_2025_item1a_0004
+16,"What cybersecurity, data breach, or cyberattack risks does the company face?",AAPL,"AAPL_2025_item1a_0016, AAPL_2025_item1a_0017"
+17,"What cybersecurity, data breach, or cyberattack risks does the company face?",TSLA,"TSLA_2025_item1a_0021, TSLA_2025_item1a_0038, TSLA_2025_item1a_0023, TSLA_2025_item1a_0022"
+18,"What cybersecurity, data breach, or cyberattack risks does the company face?",NVDA,"NVDA_2025_item1a_0021, NVDA_2025_item1a_0020, NVDA_2025_item1a_0026, NVDA_2025_item1a_0022, NVDA_2025_item1a_0024, NVDA_2025_item1a_0023"
+19,"What cybersecurity, data breach, or cyberattack risks does the company face?",AMZN,AMZN_2025_item1a_0015
+20,"What cybersecurity, data breach, or cyberattack risks does the company face?",AMD,"AMD_2025_item1a_0021, AMD_2025_item1a_0020, AMD_2025_item1a_0022"
+21,What risks come from changes in customer demand or consumer preferences?,AAPL,"AAPL_2025_item1a_0015, AAPL_2025_item1a_0001"
+22,What risks come from changes in customer demand or consumer preferences?,TSLA,TSLA_2025_item1a_0009
+23,What risks come from changes in customer demand or consumer preferences?,NVDA,"NVDA_2025_item1a_0007, NVDA_2025_item1a_0001, NVDA_2025_item1a_0008, NVDA_2025_item1a_0009"
+24,What risks come from changes in customer demand or consumer preferences?,AMZN,"AMZN_2025_item1a_0011, AMZN_2025_item1a_0007"
+25,What risks come from changes in customer demand or consumer preferences?,AMD,"AMD_2025_item1a_0010, AMD_2025_item1a_0015, AMD_2025_item1a_0009, AMD_2025_item1a_0023"
+26,How could an economic downturn or recession affect the company?,AAPL,AAPL_2025_item1a_0001
+27,How could an economic downturn or recession affect the company?,TSLA,TSLA_2025_item1a_0029
+28,How could an economic downturn or recession affect the company?,NVDA,NVDA_2025_item1a_0018
+29,How could an economic downturn or recession affect the company?,AMZN,"AMZN_2025_item1a_0011, AMZN_2025_item1a_0010"
+30,How could an economic downturn or recession affect the company?,AMD,"AMD_2025_item1a_0005, AMD_2025_item1a_0011, AMD_2025_item1a_0058"
+31,What operational risks such as system outages or process failures does the company face?,AAPL,"AAPL_2025_item1a_0004, AAPL_2025_item1a_0008"
+32,What operational risks such as system outages or process failures does the company face?,TSLA,"TSLA_2025_item1a_0021, TSLA_2025_item1a_0026, TSLA_2025_item1a_0014, TSLA_2025_item1a_0025"
+33,What operational risks such as system outages or process failures does the company face?,NVDA,"NVDA_2025_item1a_0026, NVDA_2025_item1a_0025, NVDA_2025_item1a_0024, NVDA_2025_item1a_0002"
+34,What operational risks such as system outages or process failures does the company face?,AMZN,"AMZN_2025_item1a_0016, AMZN_2025_item1a_0014"
+35,What operational risks such as system outages or process failures does the company face?,AMD,"AMD_2025_item1a_0001, AMD_2025_item1a_0028, AMD_2025_item1a_0010"
+36,What intellectual property or patent infringement risks does the company face?,AAPL,AAPL_2025_item1a_0006
+37,What intellectual property or patent infringement risks does the company face?,TSLA,TSLA_2025_item1a_0031
+38,What intellectual property or patent infringement risks does the company face?,NVDA,"NVDA_2025_item1a_0054, NVDA_2025_item1a_0055"
+39,What intellectual property or patent infringement risks does the company face?,AMZN,AMZN_2025_item1a_0009
+40,What intellectual property or patent infringement risks does the company face?,AMD,AMD_2025_item1a_0043

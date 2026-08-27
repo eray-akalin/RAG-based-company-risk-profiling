@@ -1,0 +1,41 @@
+company,category,is_present_gold
+AAPL,Supply Chain Risk,1
+AAPL,Regulatory / Legal Risk,1
+AAPL,Competition Risk,1
+AAPL,Cybersecurity Risk,1
+AAPL,Demand / Market Risk,1
+AAPL,Macroeconomic Risk,1
+AAPL,Operational Risk,1
+AAPL,IP / Technology Risk,1
+TSLA,Supply Chain Risk,1
+TSLA,Regulatory / Legal Risk,1
+TSLA,Competition Risk,1
+TSLA,Cybersecurity Risk,1
+TSLA,Demand / Market Risk,1
+TSLA,Macroeconomic Risk,1
+TSLA,Operational Risk,1
+TSLA,IP / Technology Risk,1
+NVDA,Supply Chain Risk,1
+NVDA,Regulatory / Legal Risk,1
+NVDA,Competition Risk,1
+NVDA,Cybersecurity Risk,1
+NVDA,Demand / Market Risk,1
+NVDA,Macroeconomic Risk,1
+NVDA,Operational Risk,1
+NVDA,IP / Technology Risk,1
+AMZN,Supply Chain Risk,1
+AMZN,Regulatory / Legal Risk,1
+AMZN,Competition Risk,1
+AMZN,Cybersecurity Risk,1
+AMZN,Demand / Market Risk,1
+AMZN,Macroeconomic Risk,1
+AMZN,Operational Risk,1
+AMZN,IP / Technology Risk,1
+AMD,Supply Chain Risk,1
+AMD,Regulatory / Legal Risk,1
+AMD,Competition Risk,1
+AMD,Cybersecurity Risk,1
+AMD,Demand / Market Risk,1
+AMD,Macroeconomic Risk,1
+AMD,Operational Risk,1
+AMD,IP / Technology Risk,1
