@@ -4,7 +4,7 @@ A personal implementation exploring Retrieval-Augmented Generation (RAG) for fin
 document intelligence, inspired by Lewis et al. (2020) and evaluated with the RAGAS
 framework (Es et al., 2023).
 
-** Live Demo:** https://company-risk-profiling-with-rag-ysey7ofzsqh6xemgtw9tb4.streamlit.app/
+** Live Demo:** https://rag-based-company-risk-profiling.streamlit.app/
 
 An LLM-based financial document-intelligence system that automatically extracts, structures, and
 compares company-level **risk profiles** from SEC Form 10-K filings using a multi-document
@@ -28,8 +28,8 @@ Dashboard + Comparison ← Risk Profile Aggregation ← LLM Structured Extractio
 | Embedding model | `BAAI/bge-small-en-v1.5` (384-dim, normalized) |
 | Vector index | FAISS `IndexFlatIP` (cosine similarity) |
 | Reranker | `cross-encoder/ms-marco-MiniLM-L-6-v2` |
-| Generation LLM | `llama-3.1-8b-instant` (Groq API); local `Qwen2.5-3B-Instruct` fallback |
-| Eval judge (RAGAS) | `llama-3.3-70b-versatile` (Groq) |
+| Generation LLM | `qwen/qwen3.8-27b` (Groq API); local `Qwen2.5-3B-Instruct` fallback |
+| Eval judge (RAGAS) | `openai/gpt-oss-120b` (Groq) |
 | Chunking | 400 tokens, 80-token overlap (tiktoken), heading-aware |
 
 ---
@@ -110,7 +110,7 @@ streamlit run app.py
 ```
 
 > A hosted version is available — no setup required:
-> **https://company-risk-profiling-with-rag-ysey7ofzsqh6xemgtw9tb4.streamlit.app/**
+> **https://rag-based-company-risk-profiling.streamlit.app/**
 
 **Dashboard features:** risk heatmap, top risks per company, evidence explorer, pairwise company
 comparison, multi-year (FY2021–2025) selection, and **live on-demand analysis** — type any ticker
@@ -142,6 +142,12 @@ A consolidated, human-readable report is written to
 | Retrieval (Keyword baseline) | MRR 0.40 — reranker is the single largest contributor |
 | Risk-category detection | Accuracy 0.95 · macro-F1 0.49 |
 | Faithfulness | 97% snippets verbatim-grounded · RAGAS faithfulness 0.61 · context-precision 0.89 |
+
+> **Note on generation-side numbers:** the retrieval metrics are model-independent, but the
+> category-detection and faithfulness rows were measured when the generation LLM was
+> `llama-3.1-8b-instant` and the judge was `llama-3.3-70b-versatile`. Groq has since retired both,
+> so the pipeline now runs `qwen/qwen3.8-27b` and `openai/gpt-oss-120b`. Re-run the evaluation
+> scripts to regenerate these two rows against the current models.
 
 ---
 

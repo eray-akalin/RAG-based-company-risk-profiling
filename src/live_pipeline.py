@@ -109,7 +109,7 @@ def run_live_analysis(ticker: str, year: int = None, status_placeholder=None):
         else:
             save_index(index, all_chunks, all_embeddings)
         
-        update_status(f"5/5: Llama-3 API ile Yapay Zeka Risk Analizi Yapılıyor...")
+        update_status(f"5/5: Qwen3 API ile Yapay Zeka Risk Analizi Yapılıyor...")
         extractor = RiskExtractor()
         extractor.load_model()
         extractor.load_retriever(year=fiscal_year)

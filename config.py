@@ -221,7 +221,10 @@ LOW_EVIDENCE_RELEVANCE = 0.30
 # LLM Configuration
 # ============================================================
 USE_API = True            # Set to False to use local Qwen model, True for Groq API
-GROQ_MODEL = "llama-3.1-8b-instant"
+# Chosen for reliability under response_format=json_object: it produced valid,
+# schema-conforming JSON on 16/16 extraction calls, where gpt-oss-120b failed 2/8
+# and gpt-oss-20b / qwen3.6-27b failed outright.
+GROQ_MODEL = "qwen/qwen3.8-27b"
 
 LLM_MODEL = "Qwen/Qwen2.5-3B-Instruct"
 LLM_MAX_NEW_TOKENS = 512

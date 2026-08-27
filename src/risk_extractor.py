@@ -1,7 +1,7 @@
 """
 LLM-based Structured Risk Extractor
 
-Uses Llama-3.1 via Groq API (or local Qwen2.5) to extract structured risk profiles
+Uses Qwen3.8-27B via Groq API (or local Qwen2.5) to extract structured risk profiles
 from retrieved evidence chunks. Supports both local and Colab execution.
 """
 
@@ -150,7 +150,7 @@ def validate_risk_profile(profile: dict) -> dict:
 class RiskExtractor:
     """
     Extracts structured risk profiles using an LLM.
-    Supports Groq API (Llama-3) and local HuggingFace transformers.
+    Supports Groq API (Qwen3) and local HuggingFace transformers.
     """
 
     def __init__(self, model_name: str = None, device: str = "auto", use_api: bool = USE_API):

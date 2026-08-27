@@ -1,0 +1,5 @@
+[server]
+# The default watcher walks every imported module, including the whole
+# transformers model tree. That triggers noisy torchvision import errors from
+# vision modules this project never uses. Nothing here needs hot-reload.
+fileWatcherType = "none"

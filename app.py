@@ -235,7 +235,7 @@ if st.sidebar.button("Verileri Çek & Analiz Et"):
 # Main Header + KPI Cards
 # ============================================================
 st.markdown('<p class="main-header">Automated Risk Profiling Dashboard</p>', unsafe_allow_html=True)
-st.markdown(f'<p class="sub-header">Powered by Llama-3.1-8B (Groq) · FAISS Vector Search · BAAI/bge-small-en-v1.5 <span class="year-badge">FY{selected_year}</span></p>', unsafe_allow_html=True)
+st.markdown(f'<p class="sub-header">Powered by Qwen3.8-27B (Groq) · FAISS Vector Search · BAAI/bge-small-en-v1.5 <span class="year-badge">FY{selected_year}</span></p>', unsafe_allow_html=True)
 
 # If no data for selected year, show empty state
 if not has_data:
@@ -251,7 +251,7 @@ if not has_data:
     4. **"Verileri Çek & Analiz Et"** butonuna tıklayın
     
     Sistem otomatik olarak SEC EDGAR'dan o yılın 10-K raporunu çekip, 
-    Llama-3 ile risk analizi yapacaktır.
+    Qwen3 ile risk analizi yapacaktır.
     """)
     
     all_available_years = RiskComparator.get_available_years()

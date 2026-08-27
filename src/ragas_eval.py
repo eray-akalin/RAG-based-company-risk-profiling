@@ -1,5 +1,5 @@
 """
-RAGAS Evaluation (Groq llama-3.3-70b judge + local bge embeddings)
+RAGAS Evaluation (Groq gpt-oss-120b judge + local bge embeddings)
 
 Runs RAGAS generation-side metrics on a SUBSET of the risk assessments:
 
@@ -8,8 +8,9 @@ Runs RAGAS generation-side metrics on a SUBSET of the risk assessments:
 - LLMContextPrecisionWithoutReference: are the retrieved chunks actually
   relevant to the question/response? (Judges our retrieval + gating quality.)
 
-The judge is llama-3.3-70b-versatile — deliberately STRONGER than the 8B model
-that produced the assessments, so the judgment isn't circular. Embeddings are
+The judge is gpt-oss-120b — deliberately LARGER than, and from a different model
+family than, the 27B model that produced the assessments, so the judgment isn't
+circular. Embeddings are
 the local bge model (free). A small default sample size + serial execution keep
 us within Groq free-tier rate limits.
 
@@ -33,8 +34,8 @@ from config import (
     LLM_EVIDENCE_CHUNKS,
 )
 
-# Judge model (free Groq tier, stronger than the evaluated 8B model)
-RAGAS_JUDGE_MODEL = "llama-3.3-70b-versatile"
+# Judge model (free Groq tier, larger than the evaluated 27B extraction model)
+RAGAS_JUDGE_MODEL = "openai/gpt-oss-120b"
 DEFAULT_SAMPLE_LIMIT = 6      # keep small for free-tier rate limits
 CTX_CHAR_LIMIT = 800          # truncate each context chunk to save tokens
 

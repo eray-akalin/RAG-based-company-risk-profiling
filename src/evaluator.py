@@ -255,7 +255,7 @@ def write_evaluation_report(year: int = DEFAULT_YEAR, top_k: int = 5) -> str:
         scored = rg.get("n_scored", {})
         L += ["## RAGAS Metrics (LLM-judged)",
               f"Judge: `{rg.get('judge_model')}` | Samples requested: {rg.get('n_samples')}",
-              "(Stronger judge than the evaluated 8B model — not circular.)", ""]
+              "(Larger judge, different family than the extraction model — not circular.)", ""]
         if scored and max(scored.values()) == 0:
             L += ["> ⚠️ Son koşu rate-limit nedeniyle başarısız (0 örnek skorlandı). "
                   "Günlük token limiti sıfırlanınca yeniden çalıştır.", ""]
