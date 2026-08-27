@@ -4,6 +4,10 @@ Configuration and constants for the Risk Profiling RAG pipeline.
 
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # ============================================================
 # Project Paths
 # ============================================================
@@ -61,7 +65,11 @@ COMPANIES = {
 SEC_EDGAR_BASE_URL = "https://efts.sec.gov/LATEST"
 SEC_EDGAR_FILINGS_URL = "https://www.sec.gov/cgi-bin/browse-edgar"
 SEC_EDGAR_ARCHIVES_URL = "https://www.sec.gov/Archives/edgar/data"
-SEC_USER_AGENT = "CompanyRiskProfilingRAG contact@example.com"  # SEC requires a user-agent
+# SEC requires a User-Agent carrying a real name and contact email, so this is
+# read from the environment rather than committed. Format: "AppName email@domain".
+SEC_USER_AGENT = os.environ.get(
+    "SEC_USER_AGENT", "CompanyRiskProfilingRAG contact@example.com"
+)
 
 # ============================================================
 # Risk Taxonomy

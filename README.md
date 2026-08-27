@@ -72,12 +72,16 @@ profiles arbitrary tickers on demand (e.g., GOOGL, NFLX, PLTR were profiled as d
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the project root with a Groq API key (used for the generation LLM and
-the RAGAS judge; get a free key at https://console.groq.com):
+Create a `.env` file in the project root:
 
 ```
 GROQ_API_KEY=your_key_here
+SEC_USER_AGENT=YourAppName your-email@example.com
 ```
+
+`GROQ_API_KEY` powers the generation LLM and the RAGAS judge (get a free key at
+https://console.groq.com). `SEC_USER_AGENT` is required by SEC EDGAR's fair-access
+policy — it must carry a real contact email, or requests are rejected.
 
 > To run fully offline, set `USE_API = False` in `config.py` to use the local Qwen2.5-3B model.
 
