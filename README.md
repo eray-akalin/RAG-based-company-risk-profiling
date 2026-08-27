@@ -156,8 +156,9 @@ A consolidated, human-readable report is written to
 ```
 company-risk-profiling-with-rag/
 ├── config.py                     # Configuration (companies, taxonomy, models, thresholds)
-├── requirements.txt              # Python dependencies
+├── requirements.txt              # Pinned Python dependencies
 ├── app.py                        # Streamlit dashboard
+├── .streamlit/config.toml        # Streamlit runtime settings
 ├── data/                         # raw / extracted / chunks / embeddings / risk_profiles (gitignored)
 ├── src/
 │   ├── collector.py              # SEC EDGAR data collection

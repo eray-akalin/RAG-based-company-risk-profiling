@@ -121,7 +121,7 @@ def evaluate_retrieval(annotations_file: str, top_k: int = 5, year: int = DEFAUL
                        ablation: bool = True):
     """
     Compute Recall@K, MRR, nDCG@K over annotated queries against the FY`year`
-    index for a baseline ladder (proposal §3.7):
+    index for a baseline ladder:
 
       1. Keyword (baseline)        — naive term-matching, no embeddings
       2. Dense FAISS (no rerank)   — embedding-based retrieval baseline

@@ -1,8 +1,8 @@
 """
 Category-Detection Evaluation (accuracy + macro-F1)
 
-Proposal §3.7 asks us to label a set of company-risk pairs with expected risk
-categories and compare the model's output using accuracy and macro-F1.
+Labels a set of company-risk pairs with expected risk categories and compares
+the model's output against them using accuracy and macro-F1.
 
 We frame this as binary risk-presence detection per (company × category):
 - Gold: `evaluation/annotations/category_gold_2025.csv` (is_present_gold ∈ {0,1});
